@@ -1,0 +1,12 @@
+<div class="container">
+    <div>{{ titulo }}</div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="producto" *ngFor="let producto of productos">
+                <button class="boton" (click)="manejarClick(producto)">
+                    <img [src]="producto.imagen" width="150" height="150">
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
